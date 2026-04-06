@@ -82,3 +82,35 @@ The model can:
 
 ```python
 joblib.dump(best_ad, 'best_model_ad.joblib')
+
+Load model:
+
+joblib.load('best_model_ad.joblib')
+Project Structure
+aml-detection/
+│── aml_detection.ipynb
+│── best_model_ad.joblib
+│── README.md
+Tech Stack
+Python
+Pandas
+NumPy
+Scikit-learn
+Imbalanced-learn
+Matplotlib
+Seaborn
+How to Run
+Install dependencies:
+pip install pandas numpy scikit-learn imbalanced-learn matplotlib seaborn kagglehub
+Run the notebook:
+jupyter notebook aml_detection.ipynb
+Key Learnings
+Handling highly imbalanced datasets
+Combining unsupervised and supervised learning
+Feature engineering for time-based data
+Model tuning for large datasets
+Future Improvements
+Deploy as a real-time fraud detection API
+Use deep learning models such as LSTM or autoencoders
+Integrate streaming pipelines using Kafka and Spark
+Add explainability using SHAP or LIME
